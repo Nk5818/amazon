@@ -1,2 +1,459 @@
-git init
-git reomote add origin https://github.com/Nk5818/amazon.git
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .cat {
+            transition: 300ms;
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .cat:hover {
+            background-color: aliceblue;
+        }
+
+        i {
+            transition: 300ms;
+        }
+
+        .cat:hover i {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- collapse start -->
+    <div class="collapse" id="search">
+        <div class="alert alert-primary mb-0">
+            <div class="container">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <h6 class="my-3">Quick Links</h6>
+                <div class="row">
+                    <div class="col-sm-3">
+
+                        <a href="" class=" d-block my-2 text-decoration-none">link 1</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 2</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 3</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 4</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 5</a>
+
+                    </div>
+                    <div class="col-sm-3">
+
+                        <a href="" class=" d-block my-2 text-decoration-none">link 6</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 7</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 8</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 9</a>
+                        <a href="" class=" d-block my-2 text-decoration-none">link 10</a>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid"
+                                            src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                            alt="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Featured Product</h5>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <button type="button" class="btn btn-outline-primary">Shop Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- collapse end -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">
+                <img src="data:image/jpeg;base64,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"
+                    class="img-fluid" alt="">
+                SKILLHUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- <div class="dropdown"> -->
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu w-100 alert alert-primary">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex gap-3 cat">
+                                        <i class="bi bi-laptop fs-1"></i>
+                                        <div>
+                                            <h6>Laptops</h6>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+                <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-search" data-bs-toggle="collapse" data-bs-target="#search"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#cart">
+                        <i class="bi bi-cart"></i>
+                    </button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#login">Login
+                        <i class="bi bi-person-fill-lock"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- login start -->
+    <div class="offcanvas offcanvas-start" id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-light">Login</div>
+                        <div class="card-body">
+                            <div>
+                                <label for="email" class="form-label">First Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter Your Email" />
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please choose a username.</div>
+                            </div>
+                            <div class="mt-2">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter Your Password" />
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please choose a username.</div>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100 mt-3">
+                                Login
+                            </button>
+                            <p class="text-center mt-3">
+                                Dont Have Account? <a href="#">Create Account</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login end -->
+
+    <!-- Cart start -->
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header bg-primary text-light">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body alert alert-primary mb-0">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>Fake Product</strong>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <strong>45,999/-</strong>
+                        </div>
+                    </div>
+                    <p class="text-success text-center">you have saved <strong>15,999</strong> on this order</p>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-warning">
+                            <i class="bi bi-tag"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>Fake Product</strong>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <strong>45,999/-</strong>
+                        </div>
+                    </div>
+                    <p class="text-success text-center">you have saved <strong>15,999</strong> on this order</p>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-warning">
+                            <i class="bi bi-tag"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="collapse" data-bs-target="#coupon">I have
+                        coupon</a>
+                    <div class="collapse" id="coupon">
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter coupon" class="form-control">
+                            <button type="button" class="btn btn-primary">Apply</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Price</span>
+                        <strong>898,988</strong>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Tax</span>
+                        <strong>8,988</strong>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Total</span>
+                        <strong>907,976</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Cart end -->
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="500">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row  ">
+                    <div class="col-sm-6 text-end">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                            alt="" class="img-fluid pe-0">
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>Dell XPS 13</h1>
+                        <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ipsum.</p>
+                        <button type="button" class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="row  ">
+                    <div class="col-sm-6 text-end">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>Dell XPS 13</h1>
+                        <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ipsum.</p>
+                        <button type="button" class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="row  ">
+                    <div class="col-sm-6 text-end">
+                        <img src="https://rukminim1.flixcart.com/image/250/250/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                            alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>Dell XPS 13</h1>
+                        <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ipsum.</p>
+                        <button type="button" class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class=" bg-primary">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="d-flex gap-3 text-light">
+                        <i class="bi bi-credit-card fs-1 "></i>
+                        <div>
+                            <h6>secure chekdout</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-flex gap-3 text-light">
+                        <i class="bi bi-credit-card fs-1 "></i>
+                        <div>
+                            <h6>secure chekdout</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-flex gap-3 text-light">
+                        <i class="bi bi-credit-card fs-1 "></i>
+                        <div>
+                            <h6>secure chekdout</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container d-flex justify-content-between align-items-center my-lg-2">
+        <span class="fs-1">featured proudcut</span>
+        <button type="button" class="btn btn-primary">view all</button>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                    alt class="img-fluid" </div>
+
+
+
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                    class="img-fluid" alt="">
+                                <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                    class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="card-footer alert alert-primary mb-0">
+                            <div>
+                                <strong> face producut</strong>
+                                <span>satrting <b> prize 89,000 </b> </span>
+                            </div>
+                            <button type="button" class="btn btn-primary">show now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div class="badge bg-success"> most populer</div>
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://m.media-amazon.com/images/I/31hup-j6ogL._SX679_.jpg" class="img-fluid"
+                                alt="">
+                            <p>roter</p>
+                            <p>satting prize 499</p>
+                            <i class="text-warning bi bi-star-fill"></i>
+                            <i class="text-warning bi bi-star-fill"></i>
+                            <i class="text-warning bi bi-star-fill"></i>
+                            <i class="text-warning bi bi-star-fill"></i>
+                            <i class="text-warning bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
